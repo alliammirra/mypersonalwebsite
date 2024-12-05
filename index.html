@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f3e5f5;
+        color: #4a148c;
+    }
+
+    .navbar {
+        overflow: hidden;
+        background-color: #6a1b9a;
+        padding: 0 20px;
+        list-style-type: none;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+
+    .navbar a:hover {
+        background-color: #8e24aa;
+        color: white;
+    }
+
+    .navbar a.active {
+        background-color: #B66878;
+        color: white;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 0;
+        background-color: #7b1fa2;
+        color: white;
+    }
+
+    .hero-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero p {
+        margin-top: 20px;
+        font-size: 1.2em;
+    }
+
+    .info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 20px auto;
+        max-width: 1200px;
+        gap: 20px;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .info-box {
+        flex: 1;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        max-width: 300px;
+    }
+
+    .info-box h3 {
+        color: #B66878;
+        margin-bottom: 10px;
+    }
+
+    .info-box p {
+        font-family: 'Comic Sans MS', Cursive;
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    .info-box a {
+        color: #6a1b9a;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .info-box a:hover {
+        color: #8e24aa;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #4a148c;
+        color: white;
+        margin-top: 20px;
+    }
+
+    .clock {
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        margin-top: 20px;
+        color: #6a1b9a;
+    }
+	
+</style>
+</head>
+<body>
+
+    <ul class="navbar">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html" target="_blank">About Me</a></li>
+        <li><a href="experience.html" target="_blank">Experience</a></li>
+        <li><a href="family.html" target="_blank">Family</a></li>
+        <li><a href="education.html" target="_blank">Education</a></li>
+        <li><a href="memories.html" target="_blank">Memories</a></li>
+    </ul>
+
+<section class="hero">
+    <img src="alia universe.png" alt="Welcome Image" class="hero-img" />
+    <marquee behavior="scroll" direction="left" scrollamount="10">
+    Hello everyone, welcome to my first ever website. Explore and get to know more about me, my family, my education, and the beautiful memories I cherish!
+    </marquee>
+</section>
+
+<section class="clock">
+    <div id="time"></div>
+</section>
+
+
+    <ul class="info">
+        <li class="info-box">
+            <h3>About Me</h3>
+            <p>"Discover who I am, my passions, and what drives me every day!"</p>
+            <a href="about.html">Learn More</a>
+        </li>
+
+        <li class="info-box">
+            <h3>Experience</h3>
+            <p>"From internships to projects, see how I’ve grown and gained valuable skills."</p>
+            <a href="experience.html">View Experience</a>
+        </li>
+
+        <li class="info-box">
+            <h3>Family</h3>
+            <p>Meet my wonderful family! They are my greatest source of love and inspiration.</p>
+            <a href="family.html">Meet My Family</a>
+        </li>
+
+        <li class="info-box">
+            <h3>Education</h3>
+            <p>My educational journey has been full of exciting challenges and opportunities to grow.</p>
+            <a href="education.html">See My Journey</a>
+        </li>
+
+        <li class="info-box">
+            <h3>Memories</h3>
+            <p>"Take a peek into some of my favorite moments and cherished memories."</p>
+            <a href="memories.html">View My Memories</a>
+        </li>
+    </ul>
+<audio controls autoplay >
+  <source src="intro.mpeg" type="audio/mpeg">
+</audio>
+
+<footer class="footer">
+    <p>&copy; 2024 NUR ALIA AMIRA SHAIDIN. IMD318 Personal Website.</p>
+</footer>
+
+<script>
+    function updateClock() {
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, '0');
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+        const seconds = now.getSeconds().toString().padStart(2, '0');
+        
+        const timeString = `${hours}:${minutes}:${seconds}`;
+        
+        document.getElementById('time').textContent = timeString;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock(); 
+</script>
+
+</body>
+</html>

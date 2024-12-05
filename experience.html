@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Experience</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f3e5f5;
+            color: #4a148c;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #6a1b9a;
+        }
+		
+		h1 {
+            font-family: 'Lucida Handwriting', Cursive;
+            font-size: 36px;                   
+            color: #6a1b9a;                     
+            text-align: center; 
+        }
+
+       
+        .navbar {
+            overflow: hidden;
+            background-color: #6a1b9a;
+            padding: 0 20px;
+            list-style-type: none;
+            margin: 0;
+            padding-left: 0;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #8e24aa;
+            color: white;
+        }
+
+        .navbar a.active {
+            background-color: #B66878;
+            color: white;
+        }
+		
+        .hero {
+            text-align: center;
+            padding: 0;
+            background-color: #7b1fa2;
+            color: white;
+			margin: 0;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .hero p {
+            margin-top: 20px; 
+            font-size: 1.2em;
+        }
+        
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #725483;
+            color: white;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            background-color: #f3e5f5;
+            color: #4a148c;
+            border-radius: 5px;
+        }
+
+        th {
+            background-color: #B66878;
+            color: white;
+        }
+
+        td {
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        td:hover {
+            transform: scale(1.03);
+            background-color: #7b1fa2;
+            color: white;
+        }
+
+      .category {
+    text-decoration: underline;
+    font-weight: bold;
+}
+        .experience-item {
+            display: flex;
+            align-items: center; 
+            width: 100%;
+        }
+
+        .experience-image {
+            max-width: 100px; 
+            margin-right: 15px; 
+            vertical-align: middle;
+            border-radius: 8px;
+        }
+
+        .description {
+            flex-grow: 1; 
+            text-align: justify;
+        }
+
+       .arrow {
+            display: inline-block;
+            margin-right: 8px;
+            color: #6a1b9a;
+            font-size: 1.2em;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4a148c;
+            color: white;
+            margin-top: 20px;
+        }
+</style>
+</head>
+<body>
+
+    
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="experience.html" class="active">Experience</a></li>
+        <li><a href="family.html">Family</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="memories.html">Memories</a></li>
+    </ul>
+
+	<section class="hero">
+    <img src="experienceheader.png" alt="Welcome Image" class="hero-img" />
+	<marquee behavior="scroll" direction="left" scrollamount="10">
+    Here’s a look at my experiences.
+</marquee>
+</section>
+
+    <h1>My Experience</h1>
+
+    
+    <section>
+    <table>
+        <tr>
+        <th>Category</th>
+        <th>Details</th>
+        </tr>
+        <tr>
+        <td class="category">Academic Projects</td>
+        <td>
+        <div class="experience-item">
+            <img src="website.jfif" alt="Personal Website" class="experience-image">
+        <div class="description">
+          <span class="arrow">➤</span> <strong>Personal Website Development</strong> – Designed and developed a functional personal resume website using HTML and CSS to showcase my skills and projects effectively. Through this project, I improved my technical skills, creativity, and understanding of web design.
+        </div>
+        </div>
+        </td>
+        </tr>
+        <tr>
+        
+		<td class="category">Internship</td>
+        <td>
+            <div class="experience-item">
+                <img src="internship.jfif" alt="Google Site Maintenance" class="experience-image">
+            <div class="description">
+            <span class="arrow">➤</span> <strong>Google Site Maintenance</strong> – Managed and updated content for UiTM Pulau Pinang's Student Affairs Division Google Site, ensuring accurate and accessible information for students. This experience enhanced my content management skills and attention to detail, allowing me to assist in making information easily accessible.
+            </div>
+        </div>
+        </td>
+        </tr>
+        <tr>
+        
+		<td class="category">Event Participation</td>
+        <td>
+        <div class="experience-item">
+            <img src="bedigital petronas.jfif" alt="BeDigital Petronas" class="experience-image">
+        <div class="description">
+          <span class="arrow">➤</span> <strong>BeDigital Petronas 2024</strong> – Acted as a program committee member, contributing to event logistics, participant coordination, and overall event management. This role helped me enhance my teamwork and organizational skills while gaining valuable insights into digital innovation.
+        </div>
+        </div>
+        </td>
+        </tr>
+        <tr>
+                
+	    <td class="category">Volunteering</td>
+        <td>
+        <div class="experience-item">
+            <img src="volunteering.jfif" alt="Volunteering" class="experience-image">
+        <div class="description">
+         <span class="arrow">➤</span> <strong>Program Kepimpinan Al-Turisti (PKA)</strong> – Participated in this leadership development program, honing my skills in teamwork, communication, and problem-solving while contributing to activities promoting excellence and personal growth. This program boosted my confidence and instilled discipline.
+        </div>
+        </div>
+        </td>
+        </tr>
+    </table>
+    </section>
+
+    
+    <footer class="footer">
+        <p>&copy; 2024 NUR ALIA AMIRA SHAIDIN. IMD318 Personal Website.</p>
+    </footer>
+
+</body>
+</html>

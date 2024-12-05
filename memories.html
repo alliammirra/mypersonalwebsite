@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f3e5f5;
+            color: #4a148c;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #6a1b9a;
+        }
+		
+		h1 {
+            font-family: 'Lucida Handwriting', Cursive;
+            font-size: 36px;                   
+            color: #6a1b9a;                     
+            text-align: center; 
+        }
+
+       
+        .navbar {
+            overflow: hidden;
+            background-color: #6a1b9a;
+            padding: 0 20px;
+            list-style-type: none;
+            margin: 0;
+            padding-left: 0;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #8e24aa;
+            color: white;
+        }
+
+        .navbar a.active {
+            background-color: #B66878;
+            color: white;
+        }
+
+		.hero {
+            text-align: center;
+            padding: 0;
+            background-color: #7b1fa2;
+            color: white;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .hero p {
+            margin-top: 20px; 
+            font-size: 1.2em;
+        }
+        
+        .memories {
+            margin: 20px;
+            padding: 20px;
+            background-color: #C98895;
+            border-radius: 8px;
+        }
+
+        .memories figure {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: inline-block;
+            width: 200px;
+            margin: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .memories img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .memories figure:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .memories figcaption {
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 10px;
+            font-size: 0.9em;
+        }
+
+       .video-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .video-container video {
+            border: 2px solid #6a1b9a;
+            border-radius: 8px;
+        }
+		
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4a148c;
+            color: white;
+            margin-top: 20px;
+        }
+</style>
+</head>
+<body>
+
+    
+    <ul class="navbar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html"class="active">About Me</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="family.html">Family</a></li>
+    <li><a href="education.html">Education</a></li> 
+    <li><a href="memories.html">Memories</a></li>
+</ul>
+
+<section class="hero">
+    <img src="memoriesheader.png" alt="Welcome Image" class="hero-img" />
+	<marquee behavior="scroll" direction="left" scrollamount="10">
+    Here are some of my favorite memories.
+</marquee>
+</section>
+
+    <h1>Memories</h1>
+    <section class="memories">
+        <figure>
+            <img src="pic 1.jfif" alt="Memory 1">
+            <figcaption>"A little glimpse of baby me in 2005—small beginnings, big dreams." </figcaption>
+        </figure>
+        <figure>
+            <img src="pic 2.jfif" alt="Memory 2">
+            <figcaption>"Cherishing the moments that truly matter—17 November 2024"</figcaption>
+        </figure>
+        <figure>
+            <img src="pic 3.jfif" alt="Memory 3">
+            <figcaption>"First concert ever and it’s Hujan performing live—13 October 2024"</figcaption>
+        </figure>
+        <figure>
+            <img src="pic 4.jfif" alt="Memory 4">
+            <figcaption>"Great food, endless laughs, and the best people—6 November 2024"</figcaption>
+        </figure>
+        <figure>
+            <img src="pic 5.jfif" alt="Memory 5">
+            <figcaption>"Mom’s love and SiSu’s paws, 10 April 2024."</figcaption>
+        </figure>
+        <figure>
+            <img src="pic 6.jfif" alt="Memory 6">
+            <figcaption>"Wandering through Penang on 25 October 2024, collecting moments, not things." </figcaption>
+        </figure>
+        <figure>
+            <img src="pic 7.jfif" alt="Memory 7">
+            <figcaption>"The day Ali joined my world—and my heart, 23 May 2024."</figcaption>
+        </figure>
+        <figure>
+            <img src="pic 8.jfif" alt="Memory 8">
+            <figcaption>"One last presentation, one big milestone—3 July 2024, sem 4, you’ve been a ride."</figcaption>
+        </figure>
+        <figure>
+            <img src="pic 9.jfif" alt="Memory 9">
+            <figcaption>"A picture that holds stories, laughter, and bonds—2023." </figcaption>
+        </figure>
+        <figure>
+            <img src="pic 10.jfif" alt="Memory 10">
+            <figcaption>"Dreams turned real—seeing Isomniacks perform live on 13 November 2024."</figcaption>
+        </figure>
+	
+	<div class="video-container">
+        <video controls width="220">
+        <source src="video1.mp4" type="video/mp4">
+        </video>
+        <video controls width="220">
+        <source src="video2.mp4" type="video/mp4">
+        </video>
+        <video controls width="220">
+        <source src="video3.mp4" type="video/mp4">
+    </video>
+</div>
+    </section>
+
+   
+    <footer class="footer">
+        <p>&copy; 2024 NUR ALIA AMIRA SHAIDIN. IMD318 Personal Website.</p>
+    </footer>
+
+</body>
+</html>

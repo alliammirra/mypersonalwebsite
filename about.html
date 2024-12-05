@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biodata</title>
+<style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f3e5f5;
+            color: #4a148c;
+            
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #6a1b9a;
+        }
+		
+		h1 {
+            font-family: 'Lucida Handwriting', Cursive;
+            font-size: 36px;                   
+            color: #6a1b9a;                     
+            text-align: center; 
+        }
+
+
+        
+         body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f3e5f5;
+            color: #4a148c;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #6a1b9a;
+            padding: 0 20px;
+            list-style-type: none;
+            margin: 0;
+            padding-left: 0;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #8e24aa;
+            color: white;
+        }
+
+        .navbar a.active {
+            background-color: #B66878;
+            color: white;
+        }
+        
+		.hero {
+            text-align: center;
+            padding: 0;
+            background-color: #7b1fa2;
+            color: white;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .hero p {
+            margin-top: 20px; 
+            font-size: 1.2em;
+        }
+
+        
+        .biodata {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            align-items: center;
+            background-color: #725483;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        
+        .biodata table {
+            margin: 0;
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 8px;
+        }
+
+        .biodata th, .biodata td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+			font-family: 'Garamond', Serif; 
+        }
+
+        .biodata th {
+            background-color: #B66878;
+            color: white;
+        }
+
+        .biodata tr:hover {
+            background-color: #B66878;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            max-width: 150px;
+            border-radius: 5px;
+            display: block;
+            margin: auto;
+        }
+
+        
+        .music, .movies, .fun-facts {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+       
+        .music ul, .movies ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .music li, .movies li {
+            font-size: 1.2em;
+            color: #6a1b9a;
+            text-align: center;
+            margin-bottom: 10px;
+            width: 200px;
+            background-color: #f3e5f5;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .music li:hover, .movies li:hover {
+            background-color: #7b1fa2;
+            color: white;
+            cursor: pointer;
+        }
+
+       
+        .fun-facts ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .fun-facts li {
+		    font-family: 'Comic Sans MS', Cursive;
+            font-size: 1.2em;
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+
+        
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4a148c;
+            color: white;
+            margin-top: 20px;
+        }
+</style>
+</head>
+<body>
+
+    
+<ul class="navbar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html"class="active">About Me</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="family.html">Family</a></li>
+    <li><a href="education.html">Education</a></li> 
+    <li><a href="memories.html">Memories</a></li>
+</ul>
+
+<section class="hero">
+    <img src="aboutmeheader.png" alt="Welcome Image" class="hero-img" />
+	<marquee behavior="scroll" direction="left" scrollamount="10">
+   Hi, I'm Alia Amira. Let me tell you a little about myself.
+</marquee>
+</section>
+
+    <h1>Biodata</h1>
+    <section class="biodata">
+        <table>
+            <tr>
+                <th>Name</th>
+                <td>NUR ALIA AMIRA BINTI SHAIDIN</td>
+            </tr>
+            <tr>
+                <th>Date of Birth</th>
+                <td>29 JULY 2004</td>
+            </tr>
+            <tr>
+                <th>Location</th>
+                <td>Penang, Malaysia</td>
+            </tr>
+            <tr>
+                <th>Program</th>
+                <td>Diploma in Information Management</td>
+            </tr>
+            <tr>
+                <th>Hobbies</th>
+                <td>Reading, Traveling, Listening to music</td>
+            </tr>
+        </table>
+        <div class="image-gallery">
+            <img src="sunset.jpeg" alt="Image 1">
+            <img src="alia mirror.jpeg" alt="Image 2">
+            <img src="insomniacks.jpeg" alt="Image 3">
+            <img src="train.jpeg" alt="Image 4">
+        </div>
+    </section>
+
+    
+<section class="music">
+    <h2>My Favorite Songs</h2>
+ <ul>
+    <li><a href="https://youtu.be/l08Zw-RY__Q?si=O4B2sNjn9Kj5yw2O" target="_blank">Wildflower</a></li>
+    <li><a href="https://youtu.be/qCTMq7xvdXU?si=CSJXcecRr3L17muJ" target="_blank">Everything I Wanted</a></li>
+    <li><a href="https://youtu.be/tGv7CUutzqU?si=YVSoyTmbX94L3DWS" target="_blank">About You</a></li>
+    <li><a href="https://youtu.be/aezstCBHOPQ?si=gTSkO7UgzBQDUrcR" target="_blank">Too Sweet</a></li>
+    <li><a href="https://youtu.be/GCdwKhTtNNw?si=KoYc0CIMYjFF98WI" target="_blank">Sweater Weather</a></li>
+</ul>
+    </section>
+
+   
+<section class="movies">
+    <h2>My Favorite Movies</h2>
+<ul>
+    <li><a href="https://youtu.be/5PSNL1qE6VY?si=vN8Ua6czY_xNncJI" target="_blank">Avatar</a></li>
+    <li><a href="https://youtu.be/yCOPJi0Urq4?feature=shared" target="_blank">Zootopia</a></li>
+    <li><a href="https://youtu.be/o2AsIXSh2xo?si=fo65jOulFM0Vhw-N" target="_blank">Bird Box</a></li>
+    <li><a href="https://youtu.be/RlfooqeZcdY?si=Hcwzq0Wl5y3EUeAx" target="_blank">The Platform</a></li>
+    <li><a href="https://youtu.be/3UFWsEY8Hdc?feature=shared" target="_blank">Raya and The Last Dragon</a></li>
+</ul>
+    </section>
+
+    
+<section class="fun-facts">
+    <h2 style="color: pink;">Fun Facts About Me</h2>
+<ul>
+            <li>I am not a fan of trying things I'm unfamiliar with!</li>
+            <li><p>I prefer <sub>reading</sub> because it lets me explore ideas at my own pace.</p></li>
+            <li><p>I dont like being the center of attention, much rather <sup>stay out of the soptlight!</sup></p></li>
+            <li>I am practical when it comes to shooping, always looking for the best deals!</li>
+            <li>I enjoy stories that transport me to new worlds.</li>
+</ul>
+</section>
+
+   
+<footer class="footer">
+        <p>&copy; 2024 NUR ALIA AMIRA SHAIDIN. IMD318 Personal Website.</p>
+</footer>
+
+</body>
+</html>
